@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "javascript": "^1.0.0",
+    "node": "^18.20.2",
+    "react": "^18.2.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
