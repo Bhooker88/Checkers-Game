@@ -1,58 +1,51 @@
-body,
-html {
+/* styles.css */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #f0f8ff;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "Arial", sans-serif;
+  color: #333;
 }
 
-.App {
-  text-align: center;
-  padding: 20px;
+.board {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-h1 {
-  color: #dc143c;
+.square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.2s ease;
 }
 
-h2 {
-  color: #4169e1;
+.square:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-select,
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #4682b4;
+.red {
+  background-color: #b71c1c;
   color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
-select:hover,
-button:hover {
-  background-color: #6495ed;
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-select {
-  cursor: pointer;
-}
-
-.BattleArena {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #fffafa;
-  border: 2px solid #db7093;
-  border-radius: 10px;
-}
-
-.BattleArena h2 {
-  color: #008000;
+.black {
+  background-color: #1b1b1b;
+  color: white;
 }

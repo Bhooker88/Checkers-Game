@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "javascript": "^1.0.0",
     "node": "^18.20.2",
     "react": "^18.2.0",
